@@ -1,0 +1,226 @@
+.container{
+    width: 60%;
+    height: 80%;
+    background: #222225;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    place-items: center;
+    animation: fadeIn 2s ease-in-out ;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+form{
+    padding: 50px;
+    width: 62%;
+    border: 1px solid #f3f3f3d1;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+    .password-display {
+        border: 1px solid #f3f3f3d1;
+        padding: 15px;
+        width: 70%;
+        border-radius: 5px;
+        min-height: 20px; 
+        position: relative;
+        cursor: default;
+    }
+
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.checkbox-label {
+    margin-left: 13px; 
+    color: #f3f3f3d1;
+    cursor: pointer;
+}
+
+.length-label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+    color: #f3f3f3d1;
+}
+
+.password-display {
+    position: relative;
+    color: #f3f3f3d1;
+}
+
+.copy-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    height: 100%;
+    background: transparent;
+}
+
+.material-symbols-outlined{
+    color: #f3f3f3d1;
+}
+
+.generate-button{
+    background-color: #af6d4c;
+    color: #f3f3f3d1;
+    border: none;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 15%;
+    height: 20%;
+    font-size: 18px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+.generate-button:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+
+  
+
+.length {
+    cursor: grab;
+    color: #f3f3f3d1;
+}
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Removes default focus */
+  input[type="range"]:focus {
+    outline: none;
+  }
+  
+  /******** Chrome, Safari, Opera and Edge Chromium styles ********/
+  /* slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #313134;
+    border-radius: 10px;
+    height: 1rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -7px; /* Centers thumb on the track */
+    background-color: #af6d4c;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor:grab;
+  }
+  
+  /*********** Firefox styles ***********/
+  /* slider track */
+  input[type="range"]::-moz-range-track {
+    background-color: #f3f3f3d1;
+    border-radius: 10px;
+    height: 1rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-moz-range-thumb {
+    background-color: #af6d4c;
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: grab;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+    outline: 3px solid #af6d4c;
+    outline-offset: 0.125rem;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(2); 
+    border-radius: 5px; 
+    accent-color: #af6d4c;
+    cursor: pointer;
+}
+
+.checkbox-input{
+    color: #f3f3f3d1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .container{
+        width: 90%;
+        height: 90%;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+        gap: 30px;
+}
+
+.generate-button{
+    width: 30%;
+    height: 30%;
+    text-align: center;
+}
+}
+
+
