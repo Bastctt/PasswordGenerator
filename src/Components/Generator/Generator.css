@@ -109,24 +109,28 @@ form{
     align-items: center;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
-    width: 15%;
-    height: 20%;
+    width: 8%;
+    height: 25%;
     font-size: 18px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
+.iconChange{
+    transition: transform 1s ease-in-out;
+    font-size: 35px;
+}
+
+.iconChange:hover {
+    transform: rotate(360deg);
 }
 
 .generate-button:hover{
     opacity: 0.7;
     transform: scale(1.1);
 }
-
-
-  
 
 .length {
     cursor: grab;
@@ -217,9 +221,13 @@ input[type="range"] {
 }
 
 .generate-button{
-    width: 30%;
-    height: 30%;
+    width: 15%;
+    height: 35%;
     text-align: center;
+}
+
+.iconChange{
+    transform: scale(1.2);
 }
 }
 

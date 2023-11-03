@@ -114,8 +114,8 @@ function Generator() {
                     />
                 </label>
             </form>
-            <button className="generate-button" type="button" onClick={generatePasswordWithAnimation}>
-                Generate
+            <button className="generate-button" type="button" >
+            <span class="material-symbols-outlined iconChange" onClick={generatePasswordWithAnimation}>change_circle</span>
             </button>
         </div>
     );
