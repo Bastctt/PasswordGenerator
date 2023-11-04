@@ -40,7 +40,7 @@ function Generator() {
             if (currentIndex >= length) {
                 clearInterval(intervalId);
             }
-        }, 100); // Définir le délai entre chaque caractère (en millisecondes)
+        }, 100);
     };
 
     const copyToClipboard = () => {
@@ -59,7 +59,7 @@ function Generator() {
                  {password}
                 {password && (
                     <button className="copy-button" onClick={copyToClipboard}>
-                        <span className="material-symbols-outlined">content_copy</span>
+                        <span className="material-symbols-outlined copy">content_copy</span>
                     </button>
                 )}
             </div>
@@ -107,8 +107,8 @@ function Generator() {
                     <input
                         className="length"
                         type="range"
-                        min="6"
-                        max="20"
+                        min="10"
+                        max="40"
                         value={length}
                         onChange={(e) => setLength(e.target.value)}
                     />
