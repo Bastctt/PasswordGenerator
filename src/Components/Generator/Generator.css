@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 .container{
     width: 60%;
     height: 80%;
@@ -28,30 +30,37 @@
 form{
     padding: 50px;
     width: 62%;
-    border-radius: 70px;
-background: #222225;
-box-shadow:  8px 8px 16px #1b1b1d,
-             -8px -8px 16px #29292d;
+    border-radius: 40px;
+    background: #e0e0e0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  18px -18px 36px #bebebe,
+                 -18px 18px 36px #ffffff;
 }
 
 
     .password-display {
-        padding: 15px;
+        padding-left: 25px;
         width: 70%;
+        height: 35%;
         border-radius: 5px;
         min-height: 20px; 
         position: relative;
         cursor: default;
         overflow: hidden;
+        display: flex;
+        align-items: center;
         border-radius: 70px;
-background: #222225;
-box-shadow:  8px 8px 16px #1b1b1d,
-             -8px -8px 16px #29292d;
+        background: #e0e0e0;
+        border-radius: 50px;
+        background: #e0e0e0;
+        box-shadow:  14px -14px 28px #bebebe,
+                     -14px 14px 28px #ffffff;
     }
 
 
@@ -64,7 +73,7 @@ box-shadow:  8px 8px 16px #1b1b1d,
 
 .checkbox-label {
     margin-left: 13px; 
-    color: #f3f3f3d1;
+    color: #222522;
     cursor: pointer;
 }
 
@@ -75,12 +84,12 @@ box-shadow:  8px 8px 16px #1b1b1d,
     flex-direction: column;
     margin: auto;
     gap: 20px;
-    color: #f3f3f3d1;
+    color: #222522;
 }
 
 .password-display {
     position: relative;
-    color: #f3f3f3d1;
+    color: #222522;
 }
 
 .copy-button {
@@ -99,7 +108,7 @@ box-shadow:  8px 8px 16px #1b1b1d,
 }
 
 .material-symbols-outlined{
-    color: #222225;
+    color: #222522;
 }
 
 .generate-button{
@@ -111,37 +120,36 @@ box-shadow:  8px 8px 16px #1b1b1d,
     text-align: center;
     text-decoration: none;
     font-size: 14px;
-    cursor: pointer;
-    border-radius: 50%; 
+    cursor: pointer; 
     width: 60px; 
     height: 60px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
-    background-color: #222225;
+    background: #f3f3f3;
     border-radius: 50px;
-background: #222225;
-box-shadow:  9px 9px 18px #131315,
-             -9px -9px 18px #313135;
+    background: #e0e0e0;
+    box-shadow:  6px -6px 12px #bebebe,
+                 -6px 6px 12px #ffffff;
+                 margin-top: 15px;
+
 }
 
 
 
 .iconChange{
-    transition: transform 0.5s ease-in-out;
     font-size: 35px;
 }
 
 .iconChange:hover {
-    transform: rotate(360deg);
+    opacity: 0.7;
 }
 
 .generate-button:hover{
-    opacity: 0.7;
     transform: scale(1.1);
 }
 
 .length {
     cursor: grab;
-    color: #f3f3f3d1;
+    color: #e0e0e0;
 }
 
 /*********** Baseline, reset styles ***********/
@@ -161,9 +169,13 @@ input[type="range"] {
   /******** Chrome, Safari, Opera and Edge Chromium styles ********/
   /* slider track */
   input[type="range"]::-webkit-slider-runnable-track {
-    background-color: #f3f3f3d1;
+    background-color: #e0e0e0;
     border-radius: 10px;
     height: 1rem;
+    border-radius: 48px;
+background: #e0e0e0;
+box-shadow:  7px -7px 14px #c3c3c3,
+             -7px 7px 14px #fdfdfd;
   }
   
   /* slider thumb */
@@ -171,25 +183,28 @@ input[type="range"] {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
     margin-top: -7px; /* Centers thumb on the track */
-    background-color: rgba(243, 243, 243, 1);
+    background:#e0e0e0;
     border-radius: 50%;
     height: 30px;
     width: 30px;
     cursor:grab;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 48px;
+background: #e0e0e0;
+box-shadow:  3px -3px 6px #c3c3c3,
+             -3px 3px 6px #fdfdfd;
   }
   
   /*********** Firefox styles ***********/
   /* slider track */
   input[type="range"]::-moz-range-track {
-    background-color: #f3f3f3d1;
+    background-color: #e0e0e0;
     border-radius: 10px;
     height: 1rem;
   }
   
   /* slider thumb */
   input[type="range"]::-moz-range-thumb {
-    background-color: #af6d4c;
+    background-color: #e0e0e0;
     border: none; /*Removes extra border that FF applies*/
     border-radius: 50%;
     height: 30px;
@@ -198,19 +213,55 @@ input[type="range"] {
   }
   
   input[type="range"]:focus::-moz-range-thumb{
-    outline: 3px solid #af6d4c;
+    outline: 3px solid #e0e0e0;
     outline-offset: 0.125rem;
   }
 
-  input[type="checkbox"] {
-    transform: scale(2); 
-    border-radius: 5px; 
-    accent-color: #f3f3f3d1;
-    cursor: pointer;
+  .options label {
+    display: flex;
+    align-items: center;
 }
 
+.checkbox-input {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+    margin: 0; 
+    font: inherit; 
+    color: #222522; 
+    width: 25px; 
+    height: 25px; 
+    border: 2px solid #e0e0e0; 
+    border-radius: 5px; 
+    background-color: #e0e0e0; 
+    cursor: pointer; 
+    border-radius: 48px;
+background: #e0e0e0;
+box-shadow:  3px -3px 5px #c7c7c7,
+             -3px 3px 5px #f9f9f9;
+}
+
+
+.checkbox-input:checked::before {
+    content: '\2714';  
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    height: 100%; 
+    color: #222522; 
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+
+.checkbox-input:hover{
+    background-color: #e0e0e0; 
+}
+
+
 .copy{
-    color: #f3f3f3d1;
+    color: #222522;
     transition: opacity 0.3s ease;
 }
 

@@ -107,15 +107,15 @@ function Generator() {
                     <input
                         className="length"
                         type="range"
-                        min="10"
-                        max="40"
+                        min="6"
+                        max="20"
                         value={length}
                         onChange={(e) => setLength(e.target.value)}
                     />
                 </label>
             </form>
             <button className="generate-button" type="button" >
-            <span class="material-symbols-outlined iconChange" onClick={generatePasswordWithAnimation}>change_circle</span>
+            <span class="material-symbols-outlined iconChange" onClick={generatePasswordWithAnimation}>arrow_right</span>
             </button>
         </div>
     );
